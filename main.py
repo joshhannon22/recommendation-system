@@ -22,6 +22,7 @@ def main():
     for query in queries:
         print(f"Searching for: {query}")
         results = get_econ_articles(key=serper_key,query=query,num_results=10)
+        breakpoint()
         articles[query] = results['organic']
     
     # Extract relevant data and save to file
